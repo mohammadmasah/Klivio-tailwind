@@ -6,572 +6,681 @@
     <title>Klivio - L'allié de votre progression</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Anton&family=Edu+SA+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
-      crossorigin="anonymous"
-    />
     <link rel="stylesheet" href="dist/output.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Edu+SA+Hand:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-anton {
+        font-family: "Anton", sans-serif;
+      }
+      .font-montserrat {
+        font-family: "Montserrat", sans-serif;
+      }
+      .font-roboto {
+        font-family: "Roboto", sans-serif;
+      }
+      .font-dancing {
+        font-family: "Dancing Script", cursive;
+      }
+      .font-edu {
+        font-family: "Edu SA Hand", cursive;
+      }
+    </style>
   </head>
-  <body>
-    <header>
-      <div class="topbar">
-        <a href="index.html" class="logo-link">
-          <img src="assets/logo.png" alt="Logo de Klivio" class="headerlogo" />
-        </a>
-        <img src="assets/icones/hamburger.svg" alt="menu" class="hamburger" />
-      </div>
+  <body class="font-montserrat">
+    <header
+      class="sticky top-0 w-full h-15 bg-[#111111] flex gap-10 rounded-b-lg z-1 text-white"
+    >
+      <div
+        class="container mx-auto px-6 py-4 flex items-center justify-between"
+      >
+        <div class="flex items-center">
+          <a href="index.html">
+            <img
+              src="assets/logo.png"
+              alt="Logo de Klivio"
+              class="w-auto h-8"
+            />
+          </a>
+        </div>
+        <nav class="hidden md:flex space-x-20">
+          <a href="#" class="hover:border-b-3 mt-3 border-green-400"
+            >Les formations</a
+          >
 
-      <div class="header-center">
-        <nav class="navbar">
-          <ul class="remove-point navbarlist">
-            <li><a href="" class="nav_info listIn">Les formations</a></li>
-          </ul>
+          <div class="">
+            <img
+              src="assets/icones/seracher.svg"
+              alt=""
+              class="absolute ml-3 mt-4 w-4 h-4 invert"
+            />
+            <form>
+              <input
+                type="text"
+                placeholder="Rechercher"
+                aria-label="Rechercher sur le site"
+                class="pl-10 pr-2 text-black bg-white rounded-full py-2 border-3 placeholder:text-xs"
+              />
+            </form>
+          </div>
         </nav>
-      </div>
-      <div class="header-center">
-        <form class="serach-form">
-          <input
-            type="text"
-            placeholder="Rechercher"
-            aria-label="Rechercher sur le site"
-            class="seracher"
-          />
-        </form>
-      </div>
-
-      <div class="header-actions">
-        <button>Connexion</button>
-        <button class="registrationBtn">Inscription</button>
+        <div class="flex items-center space-x-4">
+          <a
+            href=""
+            class="border border-green-500 px-6 py-2 rounded-full hover:bg-white/10"
+            >Connexion</a
+          >
+          <a
+            href=""
+            class="border bg-green-500 text-black px-6 py-2 rounded-full hover:bg-green-700"
+            >Inscription</a
+          >
+        </div>
       </div>
     </header>
-    <!--end of =  header +logo+ les information + serach+ conction and registion-->
+
     <main>
-      <section class="hero">
-        <div class="overlay"></div>
-
-        <div class="minTaxt">
-          <h1>Klivio, l’allié de votre progression</h1>
-          <p class="hero-p">
-            Les meilleures formations sur le développement personnel
-          </p>
-
-          <button class="btn-primary">
-            <a href="" class="underline">En savoir plus</a>
-          </button>
-        </div>
-      </section>
-      <!--Hero img and button-->
-      <h2>Les formations populaires</h2>
-      <div class="popular-programs">
-        <article class="public">
+      <div>
+        <img src="assets/bg-header.png" alt="" />
+      </div>
+      <div
+        class="w-full h-auto bg-[#1a1a1a] text-white flex flex-col items-center justify-center py-20 space-y-5"
+      >
+        <h1 class="font-anton text-5xl">
+          <span class="text-green-500">Klivio, l’allié</span> de votre
+          progression
+        </h1>
+        <p class="font-montserrat text-gray-400">
+          Les meilleures formations sur le
+          <span class="text-white">développement personnel</span>
+        </p>
+        <a
+          href="#"
+          class="border border-white/40 bg-green-500 text-black px-6 py-2 rounded-t-lg hover:bg-green-700"
+          >En savoir plus</a
+        >
+      </div>
+      <!----------------------------------------START----------------------------------------------------->
+      <h2
+        class="text-3xl h-auto text-center bg-[#1a1a1a] text-white pb-10 uppercase"
+      >
+        Les formations populaires
+      </h2>
+      <div
+        class="w-full h-auto bg-[#1a1a1a] text-white flex flex-row gap-7 pb-10"
+      >
+        <article
+          class="w-3/4 flex flex-col ml-5 bg-[#242424] border rounded-t-lg transition-all duration-250 ease-out hover:scale-107"
+        >
           <img
             src="assets/img-course.png"
             alt="Image de couverture pour la formation Parler en public"
-            class="green-img"
+            class="rounded-t-lg"
           />
 
-          <div class="price">
-            <span>15,99 €</span>
-            <span class="lastprice"><del>60€</del></span>
-          </div>
-          <div class="artical-content">
-            <h3>Parler en public</h3>
-            <p class="instructor">Sonia Lefèvre | Coach prise de parole</p>
+          <div class="w-full text-center">
+            <h3 class="text-2xl font-bold mb-2 mt-2">Parler en public</h3>
+            <p class="mb-2">Sonia Lefèvre | Coach prise de parole</p>
             <img
               src="assets/icones/5 star.svg"
               alt="Icône cinq étoiles"
-              class="star-rate"
+              class="mx-auto mb-2"
             />
-            <p class="p-artical">Gagnez en aisance et captez votre auditoire</p>
-          </div>
-        </article>
-        <!-- end of fist-->
-        <article>
-          <img
-            src="assets/img-course.png"
-            alt="Image de couverture pour la formation Parler en public"
-            class="green-img"
-          />
-
-          <div class="price">
-            <span>15,99 €</span>
-            <span class="lastprice"><del>60€</del></span>
-          </div>
-          <div class="artical-content">
-            <h3>Gérer le stress</h3>
-            <p class="instructor">Lucie Garnier | Formatrice</p>
-            <img
-              src="assets/icones/4 star.svg"
-              alt="Icône cinq étoiles"
-              class="star-rate"
-            />
-            <p class="p-artical">Apprenez à rester serein face aux défis</p>
-          </div>
-        </article>
-        <!--end secound-->
-        <article>
-          <img
-            src="assets/img-course.png"
-            alt="Image de couverture pour la formation Parler en public"
-            class="green-img"
-          />
-
-          <div class="price">
-            <span>15,99 €</span>
-            <span class="lastprice"><del>60€</del></span>
-          </div>
-          <div class="artical-content">
-            <h3>Travailler en équipe</h3>
-            <p class="instructor">David Moreau | Expert</p>
-            <img
-              src="assets/icones/4 star.svg"
-              alt="Icône cinq étoiles"
-              class="star-rate"
-            />
-            <p class="p-artical">Collaborez efficacement, même à distance</p>
-          </div>
-        </article>
-        <!--end thered-->
-        <article>
-          <img
-            src="assets/img-course.png"
-            alt="Image de couverture pour la formation Parler en public"
-            class="green-img"
-          />
-
-          <div class="price">
-            <span>15,99 €</span>
-            <span class="lastprice"><del>60€</del></span>
-          </div>
-          <div class="artical-content">
-            <h3>Gérer son temps</h3>
-            <p class="instructor">Claire Dumas | Coach organisation</p>
-            <img
-              src="assets/icones/4 star.svg"
-              alt="Icône cinq étoiles"
-              class="star-rate"
-            />
-            <p class="p-artical">
-              Optimisez vos journées et gagnez en efficacité
+            <p class="flex flex-col gap-2 mb-2">
+              Gagnez en aisance et captez votre auditoire.
             </p>
+            <div>
+              <span class="font-bold text-2xl">15,99€</span>
+              <span class=""><del>60€</del></span>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="w-3/4 flex flex-col bg-[#242424] border rounded-t-lg transition-all duration-250 ease-out hover:scale-107"
+        >
+          <img
+            src="assets/img-course.png"
+            alt="Image de couverture pour la formation Parler en public"
+            class="rounded-t-lg"
+          />
+          <div class="w-full text-center">
+            <h3 class="text-2xl font-bold mb-2 mt-2">Gérer le stress</h3>
+            <p class="mb-2">Lucie Garnier | Formatrice</p>
+            <img
+              src="assets/icones/4 star.svg"
+              alt="Icône quatre étoiles"
+              class="mx-auto mb-2"
+            />
+            <p class="mb-2">
+              Apprenez à rester serein face aux <br />
+              défis
+            </p>
+            <div>
+              <span class="font-bold text-2xl">15,99€</span>
+              <span><del>60€</del></span>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="w-3/4 flex flex-col bg-[#242424] border rounded-t-lg transition-all duration-250 ease-out hover:scale-107"
+        >
+          <img
+            src="assets/img-course.png"
+            alt="Image de couverture pour la formation Parler en public"
+            class="rounded-t-lg"
+          />
+
+          <div class="w-full text-center">
+            <h3 class="text-2xl font-bold mb-2 mt-2">Travailler en équipe</h3>
+            <p class="mb-2">David Moreau | Expert</p>
+            <img
+              src="assets/icones/4 star.svg"
+              alt="Icône quatre étoiles"
+              class="mx-auto mb-2"
+            />
+            <p class="mb-2">Collaborez efficacement, même à distance</p>
+            <div>
+              <span class="font-bold text-2xl">15,99€</span>
+              <span><del>60€</del></span>
+            </div>
+          </div>
+        </article>
+
+        <article
+          class="w-3/4 flex flex-col mr-5 bg-[#242424] border rounded-t-lg transition-all duration-250 ease-out hover:scale-107"
+        >
+          <img
+            src="assets/img-course.png"
+            alt="Image de couverture pour la formation Parler en public"
+            class="rounded-t-lg"
+          />
+          <div class="w-full text-center">
+            <h3 class="text-2xl font-bold mb-2 mt-2">Gérer son temps</h3>
+            <p class="mb-2">Claire Dumas | Coach organisation</p>
+            <img
+              src="assets/icones/4 star.svg"
+              alt="Icône quatre étoiles"
+              class="mx-auto mb-2"
+            />
+            <p class="mb-2">Optimisez vos journées et gagnez en efficacit</p>
+            <div class="mb-5">
+              <span class="font-bold text-2xl">15,99€</span>
+              <span><del>60€</del></span>
+            </div>
           </div>
         </article>
       </div>
-      <!--end foured-->
-      <button class="btn-secoundly">Voir plus de formation</button>
-      <!--buttoon for les information populaires-->
-      <!--end of Div for les formation populaires-->
-      <!--end of the section les information populaires-->
+      <div class="text-center bg-[#1a1a1a]">
+        <button
+          type="button"
+          class="border rounded-full bg-white p-2 transition-all duration-300 ease-out hover:scale-120 mb-10 text-sm hover:bg-gray-200"
+        >
+          <a href="">Voir plus de formation</a>
+        </button>
+      </div>
+      <!----------------------------------------------END OF ARTICAL ONE----------------------------------------------->
 
-      <!---------------------------------------------------------------------------------------------------->
-      <!---------------------------LES FORMATION RECENTES---------------------->
-      <section class="info-recentes">
-        <h2 class="setRecentes">Les formations récentes</h2>
-        <div class="popular-programs">
-          <article class="public">
+      <section>
+        <h2
+          class="text-3xl h-auto text-center bg-[#1a1b26] text-white pb-10 uppercase pt-10"
+        >
+          Les formations récentes
+        </h2>
+        <div
+          class="w-full h-auto bg-[#1a1b26] text-white flex flex-row gap-7 pb-10"
+        >
+          <article
+            class="w-3/4 flex flex-col ml-5 bg-[#111111] border rounded-2xl transition-all duration-250 ease-out hover:scale-107"
+          >
             <img
               src="assets/img-course.png"
               alt="Image de couverture pour la formation Parler en public"
-              class="green-img"
+              class="rounded-2xl"
             />
-            <div class="last-price price colorPrice">
-              <span>15,99 €</span>
-              <span class="lastprice"><del>60€</del></span>
-            </div>
-            <div class="artical-content">
-              <h3>Mieux communiquer</h3>
-              <p class="instructor">Julien Martel | Coach en comm.</p>
+
+            <div class="w-full text-center">
+              <h3 class="text-2xl font-bold mb-2 mt-2">Mieux communiquer</h3>
+              <p class="mb-2">Julien Martel | Coach en comm.</p>
               <img
                 src="assets/icones/5 star.svg"
                 alt="Icône cinq étoiles"
-                class="star-rate"
+                class="mx-auto mb-2"
               />
-              <p class="p-artical">
-                Améliorez vos échanges et votre impact relationnel
+              <p class="flex flex-col gap-2 mb-2">
+                Améliorez vos échanges et votre <br />
+                impact relationnel
               </p>
+              <div>
+                <span class="font-bold text-2xl">15,99€</span>
+                <span class=""><del>60€</del></span>
+              </div>
             </div>
           </article>
-          <!-- end of fist-->
-          <article>
+
+          <article
+            class="w-3/4 flex flex-col bg-[#111111] border rounded-2xl transition-all duration-250 ease-out hover:scale-107"
+          >
             <img
               src="assets/img-course.png"
               alt="Image de couverture pour la formation Parler en public"
-              class="green-img"
+              class="rounded-2xl"
             />
-
-            <div class="last-price price colorPrice">
-              <span>15,99 €</span>
-              <span class="lastprice"><del>60€</del></span>
-            </div>
-            <div class="artical-content">
-              <h3>Maîtriser ses émotions</h3>
-              <p class="instructor">Amel Benali | Psy. du travail</p>
-              <img
-                src="assets/icones/5 star.svg"
-                alt="Icône cinq étoiles"
-                class="star-rate"
-              />
-              <p class="p-artical">
-                Développez calme et intelligence émotionnelle
-              </p>
-            </div>
-          </article>
-          <!--end secound-->
-          <article>
-            <img
-              src="assets/img-course.png"
-              alt="Image de couverture pour la formation Parler en public"
-              class="green-img"
-            />
-
-            <div class="last-price price colorPrice">
-              <span>15,99 €</span>
-              <span class="lastprice"><del>60€</del></span>
-            </div>
-            <div class="artical-content">
-              <h3>Résoudre les problèmes</h3>
-              <p class="instructor">Thomas Rivière | Expert</p>
+            <div class="w-full text-center">
+              <h3 class="text-2xl font-bold mb-2 mt-2">
+                Maîtriser ses émotions
+              </h3>
+              <p class="mb-2">Amel Benali | Psy. du travail</p>
               <img
                 src="assets/icones/4 star.svg"
-                alt="Icône cinq étoiles"
-                class="star-rate"
+                alt="Icône quatre étoiles"
+                class="mx-auto mb-2"
               />
-              <p class="p-artical">
+              <p class="mb-2">Développez calme et intelligence émotionnelle</p>
+              <div>
+                <span class="font-bold text-2xl">15,99€</span>
+                <span><del>60€</del></span>
+              </div>
+            </div>
+          </article>
+
+          <article
+            class="w-3/4 flex flex-col bg-[#111111] border rounded-2xl transition-all duration-250 ease-out hover:scale-107"
+          >
+            <img
+              src="assets/img-course.png"
+              alt="Image de couverture pour la formation Parler en public"
+              class="rounded-2xl"
+            />
+
+            <div class="w-full text-center">
+              <h3 class="text-2xl font-bold mb-2 mt-2">
+                Résoudre les problèmes
+              </h3>
+              <p class="mb-2">Thomas Rivière | Expert</p>
+              <img
+                src="assets/icones/4 star.svg"
+                alt="Icône quatre étoiles"
+                class="mx-auto mb-2"
+              />
+              <p class="mb-2">
                 CAnalysez, décidez et trouvez des solutions durables
               </p>
+              <div>
+                <span class="font-bold text-2xl">15,99€</span>
+                <span><del>60€</del></span>
+              </div>
             </div>
           </article>
-          <!--end thered-->
-          <article>
+
+          <article
+            class="w-3/4 flex flex-col mr-5 bg-[#111111] border rounded-2xl transition-all duration-250 ease-out hover:scale-107"
+          >
             <img
               src="assets/img-course.png"
               alt="Image de couverture pour la formation Parler en public"
-              class="green-img"
+              class="rounded-2xl"
             />
-
-            <div class="last-price price colorPrice">
-              <span>15,99 €</span>
-              <span class="lastprice"><del>60€</del></span>
-            </div>
-            <div class="artical-content">
-              <h3>Leadership positif</h3>
-              <p class="instructor">Marc Nguyen | Consultant</p>
+            <div class="w-full text-center">
+              <h3 class="text-2xl font-bold mb-2 mt-2">Leadership positif</h3>
+              <p class="mb-2">Marc Nguyen | Consultant</p>
               <img
                 src="assets/icones/4 star.svg"
-                alt="Icône cinq étoiles"
-                class="star-rate"
+                alt="Icône quatre étoiles"
+                class="mx-auto mb-2"
               />
-              <p class="p-artical">Inspirez, motivez et fédérez votre équipe</p>
+              <p class="mb-2">
+                Inspirez, motivez et fédérez <br />
+                votre équipe
+              </p>
+              <div class="mb-5">
+                <span class="font-bold text-2xl">15,99€</span>
+                <span><del>60€</del></span>
+              </div>
             </div>
           </article>
         </div>
-        <button class="btn-secoundly btn-theerndly colorPrice">
-          Voir plus de formation
-        </button>
-        <!--end foured-->
+        <div class="text-center bg-[#1a1b26]">
+          <button
+            type="button"
+            class="border rounded-full bg-white p-2 transition-all duration-300 ease-out hover:scale-120 mb-10 text-sm hover:bg-gray-400"
+          >
+            <a href="">Voir plus de formation</a>
+          </button>
+        </div>
       </section>
-      <!--buttoon for Les formations récentes-->
-      <!--end of Div for Les formations récentes-->
-      <!--end of the section Les formations récentes-->
-      <!------------------------------------------------------------------------------------------------------->
-      <!------------------------AVIS CLIENTS-------------------->
-      <section class="customerReviews">
-        <h4>AVIS CLIENTS</h4>
-        <div class="reviewClient">
-          <div>
-            <img
-              src="assets/juliette.png"
-              alt="Photo de Juliette, cliente Klivio"
-              class="clientsPhoto"
-            /><br />
-            <div class="nameClients">
-              <span>Juliette</span><br />
-              <img src="assets/icones/5 star.svg" alt="avec 5 étoiles" />
+      <!------------------------------------------------END OF ARTICAL TWO---------------------------------------------------->
+      <section class="w-full h-170 bg-[#111111] pb-15">
+        <h4
+          class="text-5xl h-auto text-center text-white uppercase pb-10 pt-10 font-anton"
+        >
+          <span class="text-green-500">AVIS</span> CLIENTS
+        </h4>
+        <div class="flex flex-row justify-center gap-30">
+          <div
+            class="w-70 border border-none rounded-xl bg-white transition-all duration-150 ease-out hover:scale-110"
+          >
+            <div>
+              <img
+                src="assets/juliette.png"
+                alt="Photo de Juliette, cliente Klivio"
+                class="w-full h-70 rounded-xl"
+              />
             </div>
 
-            <p class="ideeClients">
-              J’ai trouvé le parcours tr è s bien structuré : vidéos courtes,
-              quizzes pertinents et projets pratiques qui m’ont permis
-              d’appliquer immédiatement les notions. L’interface est claire et
-              la progression est motivante — parfait pour se former en
+            <p class="pl-3">
+              <span class="font-bold"
+                >J’ai trouvé le parcours très bien structuré :</span
+              >
+              vidéos courtes, quizzes pertinents et projets pratiques qui m’ont
+              permis d’appliquer immédiatement les notions. L’interface est
+              claire et la progression est motivante — parfait pour se former en
               autonomie.
             </p>
+            <div class="flex justify-between pr-3">
+              <span class="font-bold pl-3">Juliette</span>
+
+              <img src="assets/icones/5 star.svg" alt="avec 5 étoiles" />
+            </div>
           </div>
-          <!--end of first div-->
-          <div>
-            <img
-              src="assets/camille.png"
-              alt="Photo de Camille, cliente Klivio"
-              class="clientsPhoto"
-            /><br />
-            <div class="nameClients">
-              <span>Camille</span><br />
-              <img src="assets/icones/5 star.svg" alt="avec 4 étoiles" />
+          <div
+            class="w-70 border border-none rounded-xl bg-white transition-all duration-150 ease-out hover:scale-110"
+          >
+            <div>
+              <img
+                src="assets/camille.png"
+                alt="Photo de Juliette, cliente Klivio"
+                class="w-full h-70 rounded-xl"
+              />
             </div>
 
-            <p class="ideeClients">
-              B on équilibre entre théorie et pratique. Les chapitres sont
-              détaillés, et le support et les corrections automatiques ont
-              vraiment aidé. I déal pour démarrer et progresser rapidement.
+            <p class="pl-3">
+              <span class="font-bold"
+                >B on équilibre entre théorie et pratique. </span
+              ><br />
+              Les chapitres sont détaillés, et le support et les corrections
+              automatiques ont vraiment aidé. <br />
+              I déal pour démarrer et progresser rapidement.
+            </p>
+            <div class="flex justify-between pr-3 pt-12">
+              <span class="font-bold pl-3">Camille</span>
+
+              <img src="assets/icones/5 star.svg" alt="avec 5 étoiles" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!------------------------------------------------END OF LES AVANTAGES CLIENT------------------------------------------>
+      <section class="bg-[#0a192f] text-white w-full h-auto">
+        <h5 class="text-4xl font-anton uppercase p-7 text-center">
+          <span class="text-green-500">[</span> Les avantages Klivio
+        </h5>
+        <div class="flex felx-row justify-between items-center">
+          <div class="m-5">
+            <ul>
+              <li class="flex items-center gap-2 mb-5">
+                <img
+                  src="assets/icones/arrow-up-right.svg"
+                  alt=""
+                  class="mb-1"
+                />Suivi de sa progression
+              </li>
+              <li class="flex items-center gap-2 mb-5">
+                <img
+                  src="assets/icones/edit-01.svg"
+                  alt=""
+                  class="mb-2"
+                />Exercices et QCM pour la mise en pratique
+              </li>
+              <li class="flex items-center gap-2 mb-5">
+                <img
+                  src="assets/icones/download-02.svg"
+                  alt=""
+                  class="mb-3"
+                />Possibilité de télécharger/ imprimer les formations
+              </li>
+              <li class="flex items-center gap-2 mb-5">
+                <img
+                  src="assets/icones/star-02.svg"
+                  alt=""
+                  class="mb-1"
+                />Contenu qualitatif et vérifié
+              </li>
+              <li class="flex items-center gap-2 mb-5">
+                <img src="assets/icones/clock-backward.svg" alt="" />Suivi en
+                autonomie, 24h/ 24 , 7j/ 7
+              </li>
+              <li class="flex items-center gap-2 mb-5">
+                <img
+                  src="assets/icones/annotation-typing.svg"
+                  alt=""
+                  class="mb-3"
+                />
+                Espaces d’échanges dédiés pour poser ses questions sur les
+                formations
+              </li>
+            </ul>
+          </div>
+          <div class="mr-10 pb-15 w-md">
+            <img
+              src="assets/avantages.png"
+              alt="Femme souriante travaillant sur son ordinateur portable près d'une fenêtre"
+              class="rounded-2xl shadow-[0_0_50px_rgba(255,255,255,0.35)] transition-all duration-150 ease-in hover:shadow"
+            />
+          </div>
+        </div>
+      </section>
+      <!-----------------------------------------------END OF AVANTAGES KLIVIO-------------------------------------------->
+      <section class="h-auto w-full bg-[#0a192f] text-white">
+        <h5 class="text-center font-anton text-4xl h-auto w-full p-7">
+          Créez vos formations avec Klivio <span class="text-green-500">]</span>
+        </h5>
+        <div class="flex flex-row justify-between items-center h-auto w-full">
+          <div class="ml-10 pb-15 w-md">
+            <img
+              src="assets/become-author.png"
+              alt="Femme prenant des notes devant un écran d'ordinateur"
+              class="mt-9 rounded-2xl shadow-[0_0_50px_rgba(255,255,255,0.35)] transition-all duration-150 ease-in hover:shadow"
+            />
+          </div>
+          <div class="mt-1 w-2/3 ml-10 mr-5">
+            <ul>
+              <li class="flex items-center gap-2 mb-5">
+                <img
+                  src="assets/icones/coin-hand.svg"
+                  alt=""
+                  class="mb-3"
+                />Commission unique, au pourcentage sur les ventes
+              </li>
+              <li class="flex items-center gap-2 mb-5">
+                <img src="assets/icones/heart.svg" alt="" class="mb-2" />Mise en
+                avant sur la plateforme
+              </li>
+              <li class="flex items-center gap-2 mb-5">
+                <img
+                  src="assets/icones/pencil-01.svg"
+                  alt=""
+                  class="mb-3"
+                />Contrôle total sur le cours : contenu, prix
+              </li>
+              <li class="flex items-center gap-2 mb-5">
+                <img src="assets/icones/settings.svg" alt="" class="mb-3" />
+                Fonctionnalités avancées : espace commentaires, possibilité de
+                créer des QCM, exercices, vidéos, téléchargement en PDF, suivi
+                des statistiques des ventes, gestion de codes promos, gestion de
+                la facturation, etc
+              </li>
+              <li class="flex items-center gap-2 mb-5">
+                <img src="assets/icones/user-profile-square.svg" alt="" />
+                Le professeur reste 100% propriétaire de sa formation et
+                conserve tous ses droits d’auteur
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!----------------------------------------------END OF CREATE TRAINGIN COURSES WITH Kilio--------------------------->
+      <section class="h-auto w-full bg-[#111111] text-white">
+        <h5 class="font-dancing text-4xl py-7 ml-5">À propos de Klivio</h5>
+        <hr class="mx-8 border-t bg-green-500 border-white/20" />
+        <div class="flex flex-row justify-between mt-5 mx-5 mb-10">
+          <div class="text-3xl font-edu leading-relaxed">
+            <p>
+              Chez Klivio, nous défendons des valeurs fondamentales qui
+              définissent notre approche éducative.
+            </p>
+          </div>
+          <div class="w-3/3">
+            <p>
+              nous engageons à assurer une rémunération équitable pour les
+              créateurs de contenu, reconnaissant la qualité de leur travail.<br /><br />
+              Favorisant l'autonomie d'apprentissage, notre plateforme offre la
+              flexibilité nécessaire pour explorer divers sujets. La
+              transparence est au cœur de notre démarche, garantissant une
+              clarté totale sur les formations que les instructeurs proposent.
+              Ensemble, ces valeurs forment le socle d'une éducation
+              enrichissante et équitable, guidant notre mission d'offrir des
+              opportunités d'apprentissage de qualité
             </p>
           </div>
         </div>
-        <!--end of secound div-->
+        <div class="w-3/4 items-center justify-center flex ml-30 pb-10">
+          <img src="assets/logo.png" alt="logo Klivio" />
+        </div>
+      </section>
+      <!-----------------------------------------------------END OF ABOUT Klivio----------------------------------------------->
+      <section
+        class="w-full h-auto bg-[#0a0a0a] text-white flex flex-row justify-between items-center"
+      >
+        <div
+          class="h-auto border rounded-2xl border-none bg-gradient-to-br from-[#31a6f4] to-[#b2bebf] w-1/5 ml-15 mt-15"
+        >
+          <h5 class="mt-5 ml-7 mb-5 font-bold">NOUS CONTACTER</h5>
+          <div class="text-sm ml-7 mb-5">
+            <h6>Mentions légales</h6>
+            <ul>
+              <li><a href="#">CGU</a></li>
+              <li><a href="#">CGV</a></li>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
 
-        <!--end of GENERAL div-->
-      </section>
-      <!---------------------------------------------------------------------------------------------------->
-      <!-------------------------LES AVANTAGES KLIVIO----------->
-      <section class="theAdvantages avantages">
-        <div class="avtg">
-          <h5 class="headerAvtg">Les avantages Klivio</h5>
-          <h5 class="newheaderAvtg">Les avantages Klivio</h5>
-          <ul class="listOfAvantages">
-            <li>
-              <img
-                src="assets/icones/arrow-up-right.svg"
-                alt=""
-                class="iconeAvantages"
-              />Suivi de sa progression
-            </li>
-            <li>
-              <img
-                src="assets/icones/edit-01.svg"
-                alt=""
-                class="iconeAvantages"
-              />Exercices et QCM pour la mise en pratique
-            </li>
-            <li>
-              <img
-                src="assets/icones/download-02.svg"
-                alt=""
-                class="iconeAvantages"
-              />Possibilité de télécharger/ imprimer les formations
-            </li>
-            <li>
-              <img
-                src="assets/icones/star-02.svg"
-                alt=""
-                class="iconeAvantages"
-              />Contenu qualitatif et vérifié
-            </li>
-            <li>
-              <img
-                src="assets/icones/clock-backward.svg"
-                alt=""
-                class="iconeAvantages"
-              />Suivi en autonomie, 24h/ 24 , 7j/ 7
-            </li>
-            <li>
-              <img
-                src="assets/icones/annotation-typing.svg"
-                alt=""
-                class="iconeAvantages"
-              />
-              Espaces d’échanges dédiés pour poser ses questions sur les
-              formations
-            </li>
-          </ul>
-        </div>
-        <div class="avantagesPh">
-          <img
-            src="assets/avantages.png"
-            alt="Femme souriante travaillant sur son ordinateur portable près d'une fenêtre, symbolisant l'apprentissage en autonomie et
-           la flexibilité de Klivio."
-            class="avantagesPhotoMobile"
-          />
-        </div>
-      </section>
-      <!----------------------------------------------------------------------------------------------------->
-      <!---------------------------CREEZ VOS FORMATION AVEX KLIVIO--------------------->
-      <section class="theAdvantages createInfo avantages">
-        <div class="avantagesPh">
-          <img
-            src="assets/become-author.png"
-            alt="Femme prenant des notes devant un écran d'ordinateur sur un bureau, symbolisant la création et
-           la gestion de formations."
-            class="avantagesPhotoMobile"
-          />
-        </div>
-        <div class="avtg">
-          <h5 class="headerAvtg">Créez vos formation</h5>
-          <!--it display none in mobile format-->
-          <h5 class="newheaderAvtg avtg-secound">
-            Créez vou formations avec Klivio
-          </h5>
-          <ul class="listOfAvantages listCreateInfo">
-            <li>
-              <img
-                src="assets/icones/coin-hand.svg"
-                alt=""
-                class="iconeAvantages"
-              />Commission unique, au pourcentage sur les ventes
-            </li>
-            <li>
-              <img
-                src="assets/icones/heart.svg"
-                alt=""
-                class="iconeAvantages"
-              />Mise en avant sur la plateforme
-            </li>
-            <li>
-              <img
-                src="assets/icones/pencil-01.svg"
-                alt=""
-                class="iconeAvantages"
-              />Contrôle total sur le cours : contenu, prix
-            </li>
-            <li>
-              <img
-                src="assets/icones/settings.svg"
-                alt=""
-                class="iconeAvantages fourthIcon icon"
-              />
-              Fonctionnalités avancées : espace commentaires, possibilité de
-              créer des QCM, exercices, vidéos, téléchargement en PDF, suivi des
-              statistiques des ventes, gestion de codes promos, gestion de la
-              facturation, etc
-            </li>
-            <li>
-              <img
-                src="assets/icones/user-profile-square.svg"
-                alt=""
-                class="iconeAvantages"
-              />
-              Le professeur reste 100% propriétaire de sa formation et conserve
-              tous ses droits d’auteur
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!------------------------------------------------------------------------------------------------------>
-      <!-------------------------------A PROPSE DE KLIVIO----------------------------->
-      <section class="aboutKerlivio">
-        <div class="aboutFirst">
-          <h5 class="headersize">À propos de Klivio</h5>
-          <p class="pAbout">
-            Chez Klivio, nous défendons des valeurs fondamentales qui
-            définissent notre approche éducative. Nous nous engageons à assurer
-            une rémunération équitable pour les créateurs de contenu,
-            reconnaissant la qualité de leur travail.<br /><br />
-            Favorisant l'autonomie d'apprentissage, notre plateforme offre la
-            flexibilité écessaire pour explorer divers sujets. La transparence
-            est au cœur de notre démarche, garantissant une clarté totale sur
-            les formations que les instructeurs proposent. Ensemble, ces valeurs
-            forment le socle d'une ducation enrichissante et équitable, guidant
-            notre mission d'offrir des pportunités d'apprentissage de qualité
-          </p>
-        </div>
-        <div class="aboutKerlivioLogo">
-          <img src="assets/logo.png" alt="logo Klivio" class="KerlivioLogo" />
-        </div>
-      </section>
-      <!----end of the A PROPOSE DE KLIVIO-->
-      <!---------------------------------------------------------------------------------------------------->
-      <!------------Form(NOUS CONTACTER)----------------------->
-      <section class="ContactUs">
-        <h5 class="formheader">NOUS CONTACTER</h5>
-        <hr class="line" />
-        <div>
-          <form class="contactForm">
-            <div class="twoLabel">
-              <label>
-                <input placeholder="Nom" type="text" class="nameAndemail" />
-              </label>
-              <label>
-                <input placeholder="Email" type="text" class="nameAndemail" />
-              </label>
-            </div>
-            <textarea
-              placeholder="Votre message"
-              rows="10"
-              cols="30"
-              class="textarea"
-            ></textarea>
-            <button type="submit" class="btn-fourthly">Envoyer</button>
-          </form>
-        </div>
-        <div class="greenLine"></div>
-        <hr class="secoundLine" />
-      </section>
-      <!----------------------------------------------------------------------------------------------------->
-    </main>
-    <!-------------END OF MAIN---------------->
-    <footer class="set-footer">
-      <div class="headerAndlist">
-        <img
-          src="assets/logo.png"
-          alt="Logo Klivio"
-          class="KerlivioLogoInfooter"
-        />
-
-        <div class="controlheight">
-          <h6>Mentions légales</h6>
-          <ul class="legal">
-            <li><a href=""></a>CGU</li>
-            <li><a href=""></a>CGV</li>
-            <li><a href=""></a>FAQ</li>
-            <li><a href=""></a>Contact</li>
-          </ul>
-        </div>
-
-        <!--<div class="headerAndlist-fr"><-->
-        <div class="controlheight">
-          <address class="contact-col">
-            <h6 class="lastHeader">Coordonnées</h6>
-            <ul class="legal">
-              <li>
-                <img
-                  src="assets/icones/marker-02.svg"
-                  alt=""
-                  class="footIcone"
-                />1 place république,<br />
+          <h6 class="ml-7 text-sm">Coordonnées</h6>
+          <div>
+            <ul>
+              <li class="flex flex-row ml-7 mb-2 text-sm">
+                <!-- <img src="assets/icones/marker-02.svg" alt="" />1 place -->
+                république,<br />
                 75003 Paris
               </li>
-              <li>
-                <img src="assets/icones/phone.svg" alt="" class="footIcone" />
+              <li class="flex flex-row ml-7 mb-2 text-sm">
+                <!-- <img src="assets/icones/phone.svg" alt="" /> -->
                 01.02.03.04 .05
               </li>
-              <li>
-                <img src="assets/icones/mail-01.svg" alt="" class="footIcone" />
+              <li class="flex flex-row ml-7 mb-5 text-sm">
+                <!-- <img src="assets/icones/mail-01.svg" alt="" /> -->
                 contact@klivio.fr
               </li>
             </ul>
-          </address>
-        </div>
+          </div>
 
-        <div class="header-actions forButton controlheight controlForbutton">
-          <button>Connexion</button>
-          <button class="registrationBtn">Inscription</button>
+          <h6 class="ml-7 mb-2 text-sm">Suivez - nous</h6>
+          <div class="w-30">
+            <ul class="flex flex-row gap-2 ml-7">
+              <li>
+                <a href="#"
+                  ><img src="assets/icones/facebook.svg" alt="Facebook"
+                /></a>
+              </li>
+              <li>
+                <a href="#"><img src="assets/icones/X.svg" alt="X" /></a>
+              </li>
+              <li class="flex flex-row">
+                <a href="#"
+                  ><img src="assets/icones/instagram.svg" alt="Instagram"
+                /></a>
+              </li>
+              <li class="flex flex-row">
+                <a href="#"
+                  ><img src="assets/icones/linkdin.svg" alt="Linkedin"
+                /></a>
+              </li>
+            </ul>
+          </div>
+          <div class="my-5 flex flex-row justify-center gap-5">
+            <button
+              type="button"
+              class="border bg-sky-800 rounded-2xl p-1.5 border-none transition-all duration-150 ease-in hover:bg-sky-500"
+            >
+              <a href="">Connexion</a>
+            </button>
+            <button
+              type="button"
+              class="border bg-[#0f8cec] rounded-2xl border-none p-1.5 transition-all duration-150 ease-in hover:bg-sky-500"
+            >
+              <a href="">Inscription</a>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="control-social">
-        <hr class="theredline" />
-        <div class="social-media">
-          <p class="accessible">&copy; Klivio- 2025</p>
-          <span class="social-text">Suivez - nous</span>
-          <ul class="social-icons">
-            <li>
-              <a href=""><img src="assets/icones/facebook.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href=""><img src="assets/icones/X.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href=""><img src="assets/icones/instagram.svg" alt="" /></a>
-            </li>
-            <li>
-              <a href=""><img src="assets/icones/linkdin.svg" alt="" /></a>
-            </li>
-          </ul>
+        <div
+          class="m-auto w-1/3 bg-[#111111] p-8 mr-10 mt-30 mb-10 rounded-3xl border border-white/5"
+        >
+          <form class="flex flex-col gap-5">
+            <div class="flex flex-col gap-4">
+              <label class="flex flex-col gap-2">
+                <span class="text-xs text-gray-400 font-montserrat ml-2"
+                  >Nom</span
+                >
+                <input
+                  placeholder="Votre nom"
+                  type="text"
+                  class="bg-[#1a1a1a] border border-white/10 p-4 rounded-xl text-white focus:border-green-500 outline-none"
+                />
+              </label>
+
+              <label class="flex flex-col gap-2">
+                <span class="text-xs text-gray-400 ml-2">Email</span>
+                <input
+                  placeholder="exemple@mail.com"
+                  type="email"
+                  class="bg-[#1a1a1a] border border-white/10 p-4 rounded-xl text-white focus:border-green-500 outline-none transition-all"
+                />
+              </label>
+            </div>
+
+            <label class="flex flex-col gap-2">
+              <span class="text-xs text-gray-400 ml-2">Votre message</span>
+              <textarea
+                placeholder="Comment pouvons-nous vous aider ?"
+                rows="6"
+                class="w-full bg-[#1a1a1a] border border-white/10 p-4 rounded-xl text-white focus:ring-green-500 outline-none"
+              ></textarea>
+            </label>
+
+            <button
+              type="submit"
+              class="w-full bg-green-500 hover:bg-green-400 text-black font-anton py-4 rounded-xl transition-all uppercase mt-2"
+            >
+              Envoyer
+            </button>
+          </form>
         </div>
-      </div>
+      </section>
+    </main>
+    <!--end of the main-->
+    <footer class="h-auto w-full bg-[#0a0a0a] text-white pb-5">
+      <p class="ml-5">&copy; Klivio- 2025</p>
     </footer>
   </body>
 </html>
